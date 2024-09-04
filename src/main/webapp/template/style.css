@@ -1,0 +1,36 @@
+.container {
+    width: 500px;
+    margin-left: 35%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.header {
+    color: teal;
+}
+.input_info > label {
+    float: left;
+    width: 6em;
+    margin-bottom: 0.5em;
+}
+
+.input_info > input {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+.radio_button {
+    display: flex;
+}
+.radio_button > input:not(:first-child){
+    margin-left: 1em;
+}
+.button-submit {
+    margin-top: 1em;
+
+}
