@@ -32,12 +32,7 @@ public class HomeController extends HttpServlet {
 
         String dateString = request.getParameter("date");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        LocalDate localDate = LocalDate.parse(dateString, formatter);
-
-
-        LocalDateTime localDateTime = localDate.atStartOfDay();
-
-        Timestamp dateOfBirth = Timestamp.valueOf(localDateTime);
+        LocalDate dateOfBirth = LocalDate.parse(dateString, formatter);
         String industry = request.getParameter("industry");
 
         String contact = request.getParameter("contact-method");
@@ -48,6 +43,7 @@ public class HomeController extends HttpServlet {
         }
         request.setAttribute("checkBoxs", checkBox);
         request.setAttribute("industry", industry);
+        String message;
         request.setAttribute("user", userModel);
         RequestDispatcher rd = request.getRequestDispatcher("views/web/thanks.jsp");
         rd.forward(request, response);

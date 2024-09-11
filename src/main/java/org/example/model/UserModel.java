@@ -1,6 +1,8 @@
 package org.example.model;
 
 import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class UserModel {
     private String email;
@@ -8,11 +10,11 @@ public class UserModel {
     private String lastName;
 
     private String contact;
-    private Timestamp dateOfBirth;
+    private LocalDate dateOfBirth;
 
     private Boolean []checkYes;
 
-    public UserModel(String email, String firstName, String lastName, String contact, Timestamp dateOfBirth) {
+    public UserModel(String email, String firstName, String lastName, String contact, LocalDate dateOfBirth) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -28,11 +30,11 @@ public class UserModel {
         this.contact = contact;
     }
 
-    public Timestamp getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Timestamp dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

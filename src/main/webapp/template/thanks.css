@@ -1,20 +1,5 @@
 h1 {
     color: teal;
 }
-label {
-    float: left;
-    width: 14em;
-    margin-bottom: 0.5em;
-}
-span{
-    float: left;
-    width: 20em;
-    margin-bottom: 0.5em;
-}
 
-li {
-    list-style-type: none;
-}
-ul {
-    margin-top: -2px;
-}
+
