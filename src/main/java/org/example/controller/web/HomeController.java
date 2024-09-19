@@ -26,6 +26,7 @@ public class HomeController extends HttpServlet {
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException{
+        request.setCharacterEncoding("UTF-8");
         String email = request.getParameter("email");
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
@@ -38,9 +39,6 @@ public class HomeController extends HttpServlet {
         String contact = request.getParameter("contact-method");
         UserModel userModel = new UserModel(email, firstName, lastName, contact, dateOfBirth);
         String [] checkBox = request.getParameterValues("yes");
-        for (String box : checkBox) {
-            System.out.println(box);
-        }
         request.setAttribute("checkBoxs", checkBox);
         request.setAttribute("industry", industry);
         String message;

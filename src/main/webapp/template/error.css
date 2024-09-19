@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a {
+    margin-top: 15px;
+}
+.error-details {
+    font-size: 20px;
+}
+h2 {
+    font-size: 35px;
+}
+h1 {
+    font-size: 42px;
+}
+@media(max-width : 570px){
+    a {
+        margin-top: 10px;
+    }
+    .error-details {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+}

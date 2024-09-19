@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Survey</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<c:url value='/template/style.css' />" rel="stylesheet" type="text/css" media="all"/>
-    <style>
-        h1, h2 {
-            color: teal;
-        }
-    </style>
+<%--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">--%>
+<%--    <link href="<c:url value='/template/style.css' />" rel="stylesheet" type="text/css" media="all"/>--%>
+<%--    <style>--%>
+<%--        h1, h2 {--%>
+<%--            color: teal;--%>
+<%--        }--%>
+<%--    </style>--%>
 </head>
 <body>
-<div class="container mt-5">
+<div class="container">
     <div class="text-center">
-        <img class="img-fluid mb-4 logo" src="https://scontent.fsgn10-2.fna.fbcdn.net/v/t39.30808-6/278088100_660354014930294_7201503616104229665_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHJjCyoeQIZhbuIePJenExYM6ZCYu3CVN4zpkJi7cJU3mfLq5kjAVoivZUaEbzbnkLH94y17C74q7p84Fgrjt_m&_nc_ohc=fT1hKk9IZAYQ7kNvgFH3jtK&_nc_ht=scontent.fsgn10-2.fna&_nc_gid=AhAPQsnVrScHqzc2X--5Lv_&oh=00_AYCMRSzeuMQ1Cib-bmT1KinbZLLAIcWc9grdVlqSj4lp9Q&oe=66E70B5C" alt="Logo">
+        <img class="img-fluid mb-4 logo" src="https://www.southeastlinuxfest.org/wp-content/uploads/2014/06/Murach_image-300x300.jpg" alt="Logo">
         <h1 class="display-4">Survey</h1>
         <p>If you have a moment, we'd appreciate it if you would fill out this survey</p>
     </div>
 
-    <form action="<c:url value='/test'/>" method="post" class="needs-validation" novalidate>
+    <form action="<c:url value='/home'/>" method="post" class="needs-validation" novalidate>
         <h2>Your information</h2>
         <c:if test="${not empty message}">
             <div class="alert alert-danger">${message}</div>

@@ -1,15 +1,15 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murach's Java Servlets and JSP</title>
+    <title>Info</title>
     <link href="<c:url value='/template/thanks.css' />" rel="stylesheet" type="text/css" media="all"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="container ">
+<body>
 
 <h1 class="my-4">Thanks for joining our email list</h1>
 
@@ -62,6 +62,9 @@
                     <li>${item}</li>
                 </c:forEach>
             </ul>
+        </c:if>
+        <c:if test="${empty checkBoxs}">
+            <div>No</div>
         </c:if>
     </div>
 </div>
